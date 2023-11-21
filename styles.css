@@ -1,0 +1,481 @@
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Segoe UI como primera opción, Arial como segunda opción para toda la página */ 
+    margin: 0;
+    background: #030E1C;
+}
+
+h1,h2 {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Segoe UI como primera opción, Arial como segunda opción para elementos h3 */
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h3{
+    font-family: 'Segoe UI', Arial, sans-serif; /* Segoe UI como primera opción, Arial como segunda opción para elementos h3 */
+    font-weight: bold;
+    font-size: 33px;
+    color: white;
+}
+
+h4{
+    font-family: 'Segoe UI', Arial, sans-serif; /* Segoe UI como primera opción, Arial como segunda opción para elementos h3 */
+    font-weight: bold;
+    font-size: 23px;
+    color: white;
+}
+
+.h-form{
+    font-family: 'Segoe UI', Arial, sans-serif; /* Segoe UI como primera opción, Arial como segunda opción para elementos h3 */
+    font-weight: bold;
+    font-size: 36px;
+    color: black;
+}
+
+p {
+    font-family: 'Segoe UI Light', Arial, sans-serif; /* Segoe UI Light como primera opción, Arial como segunda opción para párrafos */
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+
+header, main, footer {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.navbar {
+    background-color:#030E1C;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    margin-right: 10px;
+    /* Ajusta el margen según sea necesario */
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons a i {
+    color: #ffffff; /* Establece el color blanco para los iconos */
+    font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
+    transition: color 0.3s ease; /* Agrega una transición suave para el cambio de color */
+}
+
+.social-icons a i:hover {
+    color: #ffcc00; /* Cambia el color al pasar el mouse */
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background-color: #333;
+    text-align: center;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    border-bottom: 1px solid #555;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .menu a {
+        margin: 10px 0;
+        border-bottom: none;
+    }
+}
+
+
+.section {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    /* Ajusta el espacio interno según sea necesario */
+}
+
+.content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content img {
+    width: 100%;
+    /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción original de la imagen */
+    display: block;
+}
+
+
+.section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+    /* Ajusta el espacio interno según sea necesario */
+    box-sizing: border-box;
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    z-index: 1;
+    /* Coloca el texto sobre la imagen */
+}
+
+.button-portada{
+    padding: 15px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-portada:hover {
+    background-color: #ffcc00; /* Cambia el color de fondo al pasar el mouse */
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+}
+
+@media screen and (max-width: 768px) {
+    .social-icons {
+        display: none; /* Oculta las redes sociales en pantallas más pequeñas */
+    }
+
+    /* Puedes agregar más estilos específicos para dispositivos más pequeños si es necesario */
+}
+@media screen and (max-width: 768px) {
+    .text-overlay {
+        position: static;
+        transform: none;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        /* Cambia el orden en columnas */
+        text-align: center;
+    }
+
+    .content img {
+        width: 100%;
+        /* La imagen ocupará el 100% del ancho del contenedor */
+        height: auto;
+        /* Mantiene la proporción original de la imagen */
+        display: block;
+    }
+}
+
+.arrow-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+   
+}
+
+.arrow-down i {
+    font-size: 40px;
+    color: #ffffff; 
+    transition: color 0.3s ease; 
+}
+
+.arrow-down i:hover {
+    color: #ffcc00; 
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-around;    
+    flex-wrap: wrap; 
+}
+
+.box {
+    /*text-align: center;*/
+    padding: 20px;
+    width: 270px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.box img {
+    width: 266px; 
+    height: 443px; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.portfolio-section{
+color: white;
+margin-bottom: 25px;
+
+}
+
+@media screen and (max-width: 900px) {
+    .portfolio {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+/*parte form y ubicacion*/
+
+.contact-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+   /* margin: 40px 0;*/
+   
+}
+
+.contact-form,
+.location-info {
+     
+    margin-bottom: 20px;
+}
+
+.contact-form h3,
+.location-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.location-info iframe {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.location-info p {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-section {
+        flex-direction: row; 
+        justify-content: space-around;        
+    }
+    
+    .contact-form,
+    .location-info {
+        width: 45%; /* Vuelve al ancho original en dispositivos más grandes */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-form h3,
+    .location-info h3 {
+        color: #030E1C;
+        background-color: white;
+        padding: 20px;
+    }
+
+    .contact-form {
+        background-color:#030E1C;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+
+
+
+/* ... footer ... */
+
+.seccion-footer {
+    text-align: center;
+}
+
+.box-footer {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    width: 300px;
+    
+}
+
+.box-footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.box-footer p{
+    font-size: 14px;
+    color: white;
+}
+
+.social-redes img {
+    width: 30px;
+    height: 30px;
+}
+hr {
+    margin: 40px 0;
+}
+.parrafito{
+    display: flex;
+    margin: 20px;
+    color:white;
+    font-size: 14px;
+}
+
+/* ... (resto del código) ... */
+.social-bot {
+    display: flex;
+    margin-right: 10px;
+    /* Ajusta el margen según sea necesario */
+}
+
+.social-bot a {
+    margin-right: 10px;
+}
+
+.social-bot a i {
+    color: #ffffff; 
+    font-size: 24px; 
+    transition: color 0.3s ease; 
+}
+
+.social-bot a i:hover {
+    color: #ffcc00; 
+}
+
+.social-bot img {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .seccion-footer {
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+        
+    }
+
+    .box-footer {
+        width: 80%; /* Ajusta el ancho según sea necesario */
+    }
+}
+

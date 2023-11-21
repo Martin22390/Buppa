@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4ea65ee69c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Tu Sitio Web</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="tu_logo.png" alt="Logo">
+                <h4>Tu Sitio</h4>
+            </div>
+            <div class="social-icons">
+                <!-- Agrega aquí tus iconos de redes sociales -->
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="menu-btn" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu">
+                <!-- Agrega aquí tus opciones de menú -->
+                <a href="#">Inicio</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Servicios</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="section">
+            <div class="content">
+                <div class="text-overlay">
+                    <h1>Título de la Sección</h1>
+                    <p>Descripción de la sección.</p>
+                    <button class="button-portada">Ingresar</button>
+                </div>
+                <img src="images/Mask Group 1.jpg" alt="Descripción de la imagen">
+                <div class="arrow-down">
+                    <a href="#parrafo-portfolio"><i class="fa-solid fa-circle-arrow-down"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-section">
+            <p id="parrafo-portfolio">Mi Portfolio</p>
+            <h3>Explora algunos de mis proyectos destacados.</h3>
+            <div class="portfolio">
+                <div class="box">
+                    <img src="images/imagen galeria 1.jpg" alt="Descripción de la imagen 1">
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita perferendis eum, quasi</h3>
+                    <p>Descripción corta del proyecto 1.</p>
+                    <button class="boton-portfolio">Ver más</button>
+                </div>
+                <div class="box">
+                    <img src="images/imagen galeria 2.jpg" alt="Descripción de la imagen 2">
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita perferendis eum, quasi</h3>
+                    <p>Descripción corta del proyecto 2.</p>
+                    <button class="boton-portfolio">Ver más</button>
+                </div>
+                <div class="box">
+                    <img src="images/imagen galeria 3.jpg" alt="Descripción de la imagen 3">
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita perferendis eum, quasi</h3>
+                    <p>Descripción corta del proyecto 3.</p>
+                    <button class="boton-portfolio">Ver más</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <div class="contact-form">
+                <h3 class="h-form">Contactanos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur a</p>
+                <form action="#" method="post">
+                    <!-- Agrega aquí los campos del formulario según tus necesidades -->
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        
+            <div class="location-info">
+                <h3 class="h-form">Ubícanos</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3083.8789743441744!2d-74.00670478460693!3d40.70608607923558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0x6466a84c3126a9f7!2sBrooklyn%20Bridge!5e0!3m2!1sen!2sus!4v1639509179104!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p>Dirección: 123 Calle Principal, Ciudad, País</p>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="seccion-footer">
+            <div class="box-footer">
+                <h3>Título Box 1</h3>
+                <p>Contenido del Box 1.</p>
+            </div>
+            <div class="box-footer">
+                <h3>Título Box 2</h3>
+                <p>Contenido del Box 2.</p>
+            </div>
+            <div class="box-footer redes-sociales">
+                <h3>Redes Sociales</h3>
+                <div class="social-bot">
+                    <!-- Agrega aquí tus iconos de redes sociales -->
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="parrafito">Un párrafo después de las cajas y la línea horizontal.</p>
+        </div>
+        
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
